@@ -32,5 +32,6 @@ urlpatterns = [
     path('book/<int:flight_id>/', views.BookFlight.as_view(), name="book-flight"),
 
     path('login/', TokenObtainPairView.as_view(), name="login"),
-    path('token/refresh/', TokenRefreshView.as_view(), name="token-refresh")
+    path('token/refresh/', TokenRefreshView.as_view(), name="token-refresh"),
+    path('register/', views.RegisterView.as_view(), name="register"),
 ]
